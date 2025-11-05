@@ -2,8 +2,8 @@
 <topics>
   <topic>
     <name>mgone-ts</name>
-    <note />
-    <updatedAt>2025-11-05 10:31:33</updatedAt>
+    <note>使用sql语句进行补零操作</note>
+    <updatedAt>2025-11-05 11:01:38</updatedAt>
     <hasGroups>true</hasGroups>
     <groups>
       <group>
@@ -11,7 +11,7 @@
         <note />
         <expanded>true</expanded>
         <createdAt>2025-11-05 10:29:05</createdAt>
-        <updatedAt>2025-11-05 10:31:33</updatedAt>
+        <updatedAt>2025-11-05 10:39:12</updatedAt>
         <topicLines>
           <topicLine>
             <line>385</line>
@@ -76,6 +76,510 @@
             <note>时间窗口往前统计</note>
             <bookmarkUid>a4c29f27-a134-4b62-9e6b-6d45a24485eb</bookmarkUid>
             <relativePath>src/main/java/com/fusionskye/mgtrace/ts/gateway/service/TraceSummaryService.java</relativePath>
+          </topicLine>
+        </topicLines>
+      </group>
+      <group>
+        <name>FillBlankUtils</name>
+        <note />
+        <expanded>true</expanded>
+        <createdAt>2025-11-05 10:38:45</createdAt>
+        <updatedAt>2025-11-05 10:39:22</updatedAt>
+        <topicLines>
+          <topicLine>
+            <line>76</line>
+            <inProject>true</inProject>
+            <url>file:///Users/jiangpeng/fusionProjects/dataservice/src/main/java/com/fusionskye/mgtrace/ts/common/util/FillBlankUtils.java</url>
+            <note>往前统计需要包含to的时间结果</note>
+            <bookmarkUid>69a01f25-85d4-42b2-8b03-df1f7f79d721</bookmarkUid>
+            <relativePath>src/main/java/com/fusionskye/mgtrace/ts/common/util/FillBlankUtils.java</relativePath>
+          </topicLine>
+        </topicLines>
+      </group>
+      <group>
+        <name>QueryService</name>
+        <note />
+        <expanded>false</expanded>
+        <createdAt>2025-11-05 10:40:48</createdAt>
+        <updatedAt>2025-11-05 10:40:48</updatedAt>
+        <topicLines>
+          <topicLine>
+            <line>145</line>
+            <inProject>true</inProject>
+            <url>file:///Users/jiangpeng/fusionProjects/dataservice/src/main/java/com/fusionskye/mgtrace/ts/instance/service/QueryService.java</url>
+            <note>依次判断的原因是：如果某个id在service中获取不到结果，会直接抛NON_DATA，但其实际结果在其它service。所以只根据ci id的前缀进行精确查找，如果查不到，直接抛NON_DATA异常。</note>
+            <bookmarkUid>0d49d211-39f6-495b-9872-a121f66611cf</bookmarkUid>
+            <relativePath>src/main/java/com/fusionskye/mgtrace/ts/instance/service/QueryService.java</relativePath>
+          </topicLine>
+        </topicLines>
+      </group>
+      <group>
+        <name>SystemMetricSummaryService</name>
+        <note />
+        <expanded>false</expanded>
+        <createdAt>2025-11-05 10:42:58</createdAt>
+        <updatedAt>2025-11-05 10:43:28</updatedAt>
+        <topicLines>
+          <topicLine>
+            <line>34</line>
+            <inProject>true</inProject>
+            <url>file:///Users/jiangpeng/fusionProjects/dataservice/src/main/java/com/fusionskye/mgtrace/ts/instance/service/SystemMetricSummaryService.java</url>
+            <note>递归处理，当前systemId比父级systemId不一样，当前systemId就加1</note>
+            <bookmarkUid>344691dd-546e-478c-8863-23c89923842d</bookmarkUid>
+            <relativePath>src/main/java/com/fusionskye/mgtrace/ts/instance/service/SystemMetricSummaryService.java</relativePath>
+          </topicLine>
+          <topicLine>
+            <line>39</line>
+            <inProject>true</inProject>
+            <url>file:///Users/jiangpeng/fusionProjects/dataservice/src/main/java/com/fusionskye/mgtrace/ts/instance/service/SystemMetricSummaryService.java</url>
+            <note>原来代码的响应状态</note>
+            <bookmarkUid>e8fee4a0-25d4-4aaa-b0ef-9019c686e4ac</bookmarkUid>
+            <relativePath>src/main/java/com/fusionskye/mgtrace/ts/instance/service/SystemMetricSummaryService.java</relativePath>
+          </topicLine>
+          <topicLine>
+            <line>40</line>
+            <inProject>true</inProject>
+            <url>file:///Users/jiangpeng/fusionProjects/dataservice/src/main/java/com/fusionskye/mgtrace/ts/instance/service/SystemMetricSummaryService.java</url>
+            <note>业务失败</note>
+            <bookmarkUid>14203195-7f13-4fab-bf2a-893e4fc9b350</bookmarkUid>
+            <relativePath>src/main/java/com/fusionskye/mgtrace/ts/instance/service/SystemMetricSummaryService.java</relativePath>
+          </topicLine>
+        </topicLines>
+      </group>
+      <group>
+        <name>BasicSummaryItem</name>
+        <note />
+        <expanded>true</expanded>
+        <createdAt>2025-11-05 10:44:19</createdAt>
+        <updatedAt>2025-11-05 10:44:19</updatedAt>
+        <topicLines>
+          <topicLine>
+            <line>18</line>
+            <inProject>true</inProject>
+            <url>file:///Users/jiangpeng/fusionProjects/dataservice/src/main/java/com/fusionskye/mgtrace/ts/instance/bucket/domain/BasicSummaryItem.java</url>
+            <note>时间戳大顶堆，堆大小保持固定为 capacity。用来存储统计结果，且始终自动保留最近的 capacity 个有值的时间点。Key: 秒级时间戳</note>
+            <bookmarkUid>e001a6b4-0daf-400d-acf9-3513d265d02c</bookmarkUid>
+            <relativePath>src/main/java/com/fusionskye/mgtrace/ts/instance/bucket/domain/BasicSummaryItem.java</relativePath>
+          </topicLine>
+        </topicLines>
+      </group>
+      <group>
+        <name>BoundedPriorityConcurrentMap</name>
+        <note />
+        <expanded>false</expanded>
+        <createdAt>2025-11-05 10:46:27</createdAt>
+        <updatedAt>2025-11-05 10:46:27</updatedAt>
+        <topicLines>
+          <topicLine>
+            <line>15</line>
+            <inProject>true</inProject>
+            <url>file:///Users/jiangpeng/fusionProjects/dataservice/src/main/java/com/fusionskye/mgtrace/ts/instance/bucket/domain/BoundedPriorityConcurrentMap.java</url>
+            <note>BoundedPriorityConcurrentMap 是一个有界并发映射实现，它使用 ConcurrentSkipListMap。它确保Map大小保持在指定的容量内。</note>
+            <bookmarkUid>58621611-7034-41a2-93a5-2a6705ae8981</bookmarkUid>
+            <relativePath>src/main/java/com/fusionskye/mgtrace/ts/instance/bucket/domain/BoundedPriorityConcurrentMap.java</relativePath>
+          </topicLine>
+        </topicLines>
+      </group>
+      <group>
+        <name>MetricSummaryItem</name>
+        <note />
+        <expanded>false</expanded>
+        <createdAt>2025-11-05 10:47:25</createdAt>
+        <updatedAt>2025-11-05 10:48:22</updatedAt>
+        <topicLines>
+          <topicLine>
+            <line>57</line>
+            <inProject>true</inProject>
+            <url>file:///Users/jiangpeng/fusionProjects/dataservice/src/main/java/com/fusionskye/mgtrace/ts/instance/bucket/domain/MetricSummaryItem.java</url>
+            <note>统计结果已稳定 &amp;&amp; 配置为不可以继续更新结果</note>
+            <bookmarkUid>258ad778-9620-40fd-b701-273c3de235ce</bookmarkUid>
+            <relativePath>src/main/java/com/fusionskye/mgtrace/ts/instance/bucket/domain/MetricSummaryItem.java</relativePath>
+          </topicLine>
+          <topicLine>
+            <line>129</line>
+            <inProject>true</inProject>
+            <url>file:///Users/jiangpeng/fusionProjects/dataservice/src/main/java/com/fusionskye/mgtrace/ts/instance/bucket/domain/MetricSummaryItem.java</url>
+            <note>统计数据是否还未稳定</note>
+            <bookmarkUid>f557a86f-c65f-49d8-a425-6b07917d8819</bookmarkUid>
+            <relativePath>src/main/java/com/fusionskye/mgtrace/ts/instance/bucket/domain/MetricSummaryItem.java</relativePath>
+          </topicLine>
+          <topicLine>
+            <line>137</line>
+            <inProject>true</inProject>
+            <url>file:///Users/jiangpeng/fusionProjects/dataservice/src/main/java/com/fusionskye/mgtrace/ts/instance/bucket/domain/MetricSummaryItem.java</url>
+            <note>等待时间内，不检查是否稳定</note>
+            <bookmarkUid>20c1c048-2881-43ee-8d49-4ab616962676</bookmarkUid>
+            <relativePath>src/main/java/com/fusionskye/mgtrace/ts/instance/bucket/domain/MetricSummaryItem.java</relativePath>
+          </topicLine>
+          <topicLine>
+            <line>140</line>
+            <inProject>true</inProject>
+            <url>file:///Users/jiangpeng/fusionProjects/dataservice/src/main/java/com/fusionskye/mgtrace/ts/instance/bucket/domain/MetricSummaryItem.java</url>
+            <note>检查是否稳定</note>
+            <bookmarkUid>bd3a40b9-7ec5-4604-8941-9a28166d11ca</bookmarkUid>
+            <relativePath>src/main/java/com/fusionskye/mgtrace/ts/instance/bucket/domain/MetricSummaryItem.java</relativePath>
+          </topicLine>
+          <topicLine>
+            <line>142</line>
+            <inProject>true</inProject>
+            <url>file:///Users/jiangpeng/fusionProjects/dataservice/src/main/java/com/fusionskye/mgtrace/ts/instance/bucket/domain/MetricSummaryItem.java</url>
+            <note>超时强制稳定</note>
+            <bookmarkUid>90a45e86-f5c8-4225-9f55-643e39cc8d58</bookmarkUid>
+            <relativePath>src/main/java/com/fusionskye/mgtrace/ts/instance/bucket/domain/MetricSummaryItem.java</relativePath>
+          </topicLine>
+        </topicLines>
+      </group>
+      <group>
+        <name>BucketContainer</name>
+        <note />
+        <expanded>false</expanded>
+        <createdAt>2025-11-05 10:48:56</createdAt>
+        <updatedAt>2025-11-05 10:49:41</updatedAt>
+        <topicLines>
+          <topicLine>
+            <line>208</line>
+            <inProject>true</inProject>
+            <url>file:///Users/jiangpeng/fusionProjects/dataservice/src/main/java/com/fusionskye/mgtrace/ts/instance/bucket/BucketContainer.java</url>
+            <note>桶索引，根据trace结束时间点，以15秒为单位，向后取整</note>
+            <bookmarkUid>472d122c-aed8-4409-abab-54615778a5e1</bookmarkUid>
+            <relativePath>src/main/java/com/fusionskye/mgtrace/ts/instance/bucket/BucketContainer.java</relativePath>
+          </topicLine>
+          <topicLine>
+            <line>210</line>
+            <inProject>true</inProject>
+            <url>file:///Users/jiangpeng/fusionProjects/dataservice/src/main/java/com/fusionskye/mgtrace/ts/instance/bucket/BucketContainer.java</url>
+            <note>系统指标</note>
+            <bookmarkUid>2acff9d8-bcc5-4a5a-aa1d-7b3f8f6b3ebf</bookmarkUid>
+            <relativePath>src/main/java/com/fusionskye/mgtrace/ts/instance/bucket/BucketContainer.java</relativePath>
+          </topicLine>
+          <topicLine>
+            <line>216</line>
+            <inProject>true</inProject>
+            <url>file:///Users/jiangpeng/fusionProjects/dataservice/src/main/java/com/fusionskye/mgtrace/ts/instance/bucket/BucketContainer.java</url>
+            <note>业务指标</note>
+            <bookmarkUid>b0bd3ea6-b2ca-4c8e-bbc7-fe8eacde8fef</bookmarkUid>
+            <relativePath>src/main/java/com/fusionskye/mgtrace/ts/instance/bucket/BucketContainer.java</relativePath>
+          </topicLine>
+          <topicLine>
+            <line>218</line>
+            <inProject>true</inProject>
+            <url>file:///Users/jiangpeng/fusionProjects/dataservice/src/main/java/com/fusionskye/mgtrace/ts/instance/bucket/BucketContainer.java</url>
+            <note>业务服务+系统服务+实例指标</note>
+            <bookmarkUid>7152c4e6-4225-489e-bff0-c76606778c2e</bookmarkUid>
+            <relativePath>src/main/java/com/fusionskye/mgtrace/ts/instance/bucket/BucketContainer.java</relativePath>
+          </topicLine>
+          <topicLine>
+            <line>222</line>
+            <inProject>true</inProject>
+            <url>file:///Users/jiangpeng/fusionProjects/dataservice/src/main/java/com/fusionskye/mgtrace/ts/instance/bucket/BucketContainer.java</url>
+            <note>统计业务的sql指标</note>
+            <bookmarkUid>05def057-1655-40eb-9808-fb48fac5dd74</bookmarkUid>
+            <relativePath>src/main/java/com/fusionskye/mgtrace/ts/instance/bucket/BucketContainer.java</relativePath>
+          </topicLine>
+        </topicLines>
+      </group>
+      <group>
+        <name>AggregationService</name>
+        <note />
+        <expanded>false</expanded>
+        <createdAt>2025-11-05 10:50:19</createdAt>
+        <updatedAt>2025-11-05 10:50:44</updatedAt>
+        <topicLines>
+          <topicLine>
+            <line>84</line>
+            <inProject>true</inProject>
+            <url>file:///Users/jiangpeng/fusionProjects/dataservice/src/main/java/com/fusionskye/mgtrace/ts/gateway/service/AggregationService.java</url>
+            <note>将单节点的多个时刻的指标聚合在一起</note>
+            <bookmarkUid>fee51198-24bf-4b75-ad16-32f15bdcaf83</bookmarkUid>
+            <relativePath>src/main/java/com/fusionskye/mgtrace/ts/gateway/service/AggregationService.java</relativePath>
+          </topicLine>
+          <topicLine>
+            <line>85</line>
+            <inProject>true</inProject>
+            <url>file:///Users/jiangpeng/fusionProjects/dataservice/src/main/java/com/fusionskye/mgtrace/ts/gateway/service/AggregationService.java</url>
+            <note>都为空时，返回数据准备中</note>
+            <bookmarkUid>cc701846-57c3-40c7-8fcf-a4d08c742238</bookmarkUid>
+            <relativePath>src/main/java/com/fusionskye/mgtrace/ts/gateway/service/AggregationService.java</relativePath>
+          </topicLine>
+          <topicLine>
+            <line>89</line>
+            <inProject>true</inProject>
+            <url>file:///Users/jiangpeng/fusionProjects/dataservice/src/main/java/com/fusionskye/mgtrace/ts/gateway/service/AggregationService.java</url>
+            <note>只要结果里有一个非成功，就直接抛异常</note>
+            <bookmarkUid>da101053-6b2c-48c6-8fdd-10dac2f44902</bookmarkUid>
+            <relativePath>src/main/java/com/fusionskye/mgtrace/ts/gateway/service/AggregationService.java</relativePath>
+          </topicLine>
+        </topicLines>
+      </group>
+      <group>
+        <name>MetricModelService</name>
+        <note />
+        <expanded>false</expanded>
+        <createdAt>2025-11-05 10:51:21</createdAt>
+        <updatedAt>2025-11-05 10:53:41</updatedAt>
+        <topicLines>
+          <topicLine>
+            <line>50</line>
+            <inProject>true</inProject>
+            <url>file:///Users/jiangpeng/fusionProjects/dataservice/src/main/java/com/fusionskye/mgtrace/ts/gateway/service/MetricModelService.java</url>
+            <note>获取所有指标模型</note>
+            <bookmarkUid>8363d1f8-ae0b-4e1c-8821-fa51aa212b8e</bookmarkUid>
+            <relativePath>src/main/java/com/fusionskye/mgtrace/ts/gateway/service/MetricModelService.java</relativePath>
+          </topicLine>
+          <topicLine>
+            <line>54</line>
+            <inProject>true</inProject>
+            <url>file:///Users/jiangpeng/fusionProjects/dataservice/src/main/java/com/fusionskye/mgtrace/ts/gateway/service/MetricModelService.java</url>
+            <note>根据指标名获取对应指标模型(从缓存中获取)</note>
+            <bookmarkUid>04ee65f3-ffb5-444d-9923-04ac9012f5b1</bookmarkUid>
+            <relativePath>src/main/java/com/fusionskye/mgtrace/ts/gateway/service/MetricModelService.java</relativePath>
+          </topicLine>
+          <topicLine>
+            <line>58</line>
+            <inProject>true</inProject>
+            <url>file:///Users/jiangpeng/fusionProjects/dataservice/src/main/java/com/fusionskye/mgtrace/ts/gateway/service/MetricModelService.java</url>
+            <note>根据指标名获取指标的计算方式</note>
+            <bookmarkUid>beb95a7b-9167-4786-8013-eef57c2647df</bookmarkUid>
+            <relativePath>src/main/java/com/fusionskye/mgtrace/ts/gateway/service/MetricModelService.java</relativePath>
+          </topicLine>
+          <topicLine>
+            <line>72</line>
+            <inProject>true</inProject>
+            <url>file:///Users/jiangpeng/fusionProjects/dataservice/src/main/java/com/fusionskye/mgtrace/ts/gateway/service/MetricModelService.java</url>
+            <note>保存指标模型</note>
+            <bookmarkUid>671bea32-5abf-4895-97f5-a0fdd731a8a8</bookmarkUid>
+            <relativePath>src/main/java/com/fusionskye/mgtrace/ts/gateway/service/MetricModelService.java</relativePath>
+          </topicLine>
+          <topicLine>
+            <line>67</line>
+            <inProject>true</inProject>
+            <url>file:///Users/jiangpeng/fusionProjects/dataservice/src/main/java/com/fusionskye/mgtrace/ts/gateway/service/MetricModelService.java</url>
+            <note>es里有，就不会保存</note>
+            <bookmarkUid>c4f2a17e-e32c-45aa-9ffb-d26e7cad4a6a</bookmarkUid>
+            <relativePath>src/main/java/com/fusionskye/mgtrace/ts/gateway/service/MetricModelService.java</relativePath>
+          </topicLine>
+          <topicLine>
+            <line>81</line>
+            <inProject>true</inProject>
+            <url>file:///Users/jiangpeng/fusionProjects/dataservice/src/main/java/com/fusionskye/mgtrace/ts/gateway/service/MetricModelService.java</url>
+            <note>批量保存指标模型</note>
+            <bookmarkUid>a461677c-8299-484c-bd92-4ba24926b25a</bookmarkUid>
+            <relativePath>src/main/java/com/fusionskye/mgtrace/ts/gateway/service/MetricModelService.java</relativePath>
+          </topicLine>
+          <topicLine>
+            <line>119</line>
+            <inProject>true</inProject>
+            <url>file:///Users/jiangpeng/fusionProjects/dataservice/src/main/java/com/fusionskye/mgtrace/ts/gateway/service/MetricModelService.java</url>
+            <note>获取所有指标的一二级信息 (默认的也加上，根据secondName去重)</note>
+            <bookmarkUid>b3840617-dc29-4a82-9b71-38f77f35d95b</bookmarkUid>
+            <relativePath>src/main/java/com/fusionskye/mgtrace/ts/gateway/service/MetricModelService.java</relativePath>
+          </topicLine>
+          <topicLine>
+            <line>97</line>
+            <inProject>true</inProject>
+            <url>file:///Users/jiangpeng/fusionProjects/dataservice/src/main/java/com/fusionskye/mgtrace/ts/gateway/service/MetricModelService.java</url>
+            <note>把默认的一二级信息也加进来</note>
+            <bookmarkUid>001a472f-e997-41e0-9898-370d65cef9eb</bookmarkUid>
+            <relativePath>src/main/java/com/fusionskye/mgtrace/ts/gateway/service/MetricModelService.java</relativePath>
+          </topicLine>
+          <topicLine>
+            <line>121</line>
+            <inProject>true</inProject>
+            <url>file:///Users/jiangpeng/fusionProjects/dataservice/src/main/java/com/fusionskye/mgtrace/ts/gateway/service/MetricModelService.java</url>
+            <note>刷新指标模型内存</note>
+            <bookmarkUid>d576c5ed-4839-48f2-b07a-5de5675b25d6</bookmarkUid>
+            <relativePath>src/main/java/com/fusionskye/mgtrace/ts/gateway/service/MetricModelService.java</relativePath>
+          </topicLine>
+          <topicLine>
+            <line>150</line>
+            <inProject>true</inProject>
+            <url>file:///Users/jiangpeng/fusionProjects/dataservice/src/main/java/com/fusionskye/mgtrace/ts/gateway/service/MetricModelService.java</url>
+            <note>从大模型中获取指标模型</note>
+            <bookmarkUid>952fbfc9-255d-4994-ab4d-6fbbf8369638</bookmarkUid>
+            <relativePath>src/main/java/com/fusionskye/mgtrace/ts/gateway/service/MetricModelService.java</relativePath>
+          </topicLine>
+        </topicLines>
+      </group>
+      <group>
+        <name>MGTMetricsSummaryService</name>
+        <note />
+        <expanded>false</expanded>
+        <createdAt>2025-11-05 10:54:26</createdAt>
+        <updatedAt>2025-11-05 10:55:01</updatedAt>
+        <topicLines>
+          <topicLine>
+            <line>275</line>
+            <inProject>true</inProject>
+            <url>file:///Users/jiangpeng/fusionProjects/dataservice/src/main/java/com/fusionskye/mgtrace/ts/gateway/service/MGTMetricsSummaryService.java</url>
+            <note>获取所有 metric</note>
+            <bookmarkUid>0827c304-ba32-4c7d-8753-c63de08a91e0</bookmarkUid>
+            <relativePath>src/main/java/com/fusionskye/mgtrace/ts/gateway/service/MGTMetricsSummaryService.java</relativePath>
+          </topicLine>
+          <topicLine>
+            <line>290</line>
+            <inProject>true</inProject>
+            <url>file:///Users/jiangpeng/fusionProjects/dataservice/src/main/java/com/fusionskye/mgtrace/ts/gateway/service/MGTMetricsSummaryService.java</url>
+            <note>如果metric没有，再查一遍直方图表格, 并且不是trace的资产id</note>
+            <bookmarkUid>2179ce13-434b-4278-89ce-2daf28e4a769</bookmarkUid>
+            <relativePath>src/main/java/com/fusionskye/mgtrace/ts/gateway/service/MGTMetricsSummaryService.java</relativePath>
+          </topicLine>
+          <topicLine>
+            <line>390</line>
+            <inProject>true</inProject>
+            <url>file:///Users/jiangpeng/fusionProjects/dataservice/src/main/java/com/fusionskye/mgtrace/ts/gateway/service/MGTMetricsSummaryService.java</url>
+            <note>刷新内存</note>
+            <bookmarkUid>790facce-f7da-4a15-ab81-237be7e949a2</bookmarkUid>
+            <relativePath>src/main/java/com/fusionskye/mgtrace/ts/gateway/service/MGTMetricsSummaryService.java</relativePath>
+          </topicLine>
+        </topicLines>
+      </group>
+      <group>
+        <name>MGTMetricsToDBService</name>
+        <note />
+        <expanded>false</expanded>
+        <createdAt>2025-11-05 10:55:38</createdAt>
+        <updatedAt>2025-11-05 10:55:38</updatedAt>
+        <topicLines>
+          <topicLine>
+            <line>366</line>
+            <inProject>true</inProject>
+            <url>file:///Users/jiangpeng/fusionProjects/dataservice/src/main/java/com/fusionskye/mgtrace/ts/gateway/service/MGTMetricsToDBService.java</url>
+            <note>根据指标名称获取指标模型并存储到es</note>
+            <bookmarkUid>0ed09ee7-a14f-4c19-bab1-0acc5df34e7d</bookmarkUid>
+            <relativePath>src/main/java/com/fusionskye/mgtrace/ts/gateway/service/MGTMetricsToDBService.java</relativePath>
+          </topicLine>
+        </topicLines>
+      </group>
+      <group>
+        <name>HistogramCustomRepository</name>
+        <note />
+        <expanded>false</expanded>
+        <createdAt>2025-11-05 10:56:42</createdAt>
+        <updatedAt>2025-11-05 10:56:42</updatedAt>
+        <topicLines>
+          <topicLine>
+            <line>98</line>
+            <inProject>true</inProject>
+            <url>file:///Users/jiangpeng/fusionProjects/dataservice/src/main/java/com/fusionskye/mgtrace/ts/gateway/repository/postgres/custom/HistogramCustomRepository.java</url>
+            <note>获取from to之间的所有业务和系统的资产id</note>
+            <bookmarkUid>5fe4de57-3603-4f38-b97c-9bf49d63a3e2</bookmarkUid>
+            <relativePath>src/main/java/com/fusionskye/mgtrace/ts/gateway/repository/postgres/custom/HistogramCustomRepository.java</relativePath>
+          </topicLine>
+        </topicLines>
+      </group>
+      <group>
+        <name>MetricCustomRepository</name>
+        <note />
+        <expanded>false</expanded>
+        <createdAt>2025-11-05 10:57:26</createdAt>
+        <updatedAt>2025-11-05 10:57:26</updatedAt>
+        <topicLines>
+          <topicLine>
+            <line>17</line>
+            <inProject>true</inProject>
+            <url>file:///Users/jiangpeng/fusionProjects/dataservice/src/main/java/com/fusionskye/mgtrace/ts/gateway/repository/postgres/custom/MetricCustomRepository.java</url>
+            <note>JPQL投影查询：返回List&lt;Object[]&gt;，hibernate不进行缓存</note>
+            <bookmarkUid>77ef73fc-a66e-4e3a-a06a-11742934141c</bookmarkUid>
+            <relativePath>src/main/java/com/fusionskye/mgtrace/ts/gateway/repository/postgres/custom/MetricCustomRepository.java</relativePath>
+          </topicLine>
+        </topicLines>
+      </group>
+      <group>
+        <name>TraceCustomRepository</name>
+        <note />
+        <expanded>false</expanded>
+        <createdAt>2025-11-05 10:58:19</createdAt>
+        <updatedAt>2025-11-05 10:58:53</updatedAt>
+        <topicLines>
+          <topicLine>
+            <line>106</line>
+            <inProject>true</inProject>
+            <url>file:///Users/jiangpeng/fusionProjects/dataservice/src/main/java/com/fusionskye/mgtrace/ts/gateway/repository/postgres/custom/TraceCustomRepository.java</url>
+            <note>补0, 滑动窗口，如果往前算，不包含当前时间点数据(统计前一分钟四个点)，往后算包含当前时间点数据(统计后三个点加当前点) following变量</note>
+            <bookmarkUid>3de3d74f-2783-421f-9c49-21cae87690be</bookmarkUid>
+            <relativePath>src/main/java/com/fusionskye/mgtrace/ts/gateway/repository/postgres/custom/TraceCustomRepository.java</relativePath>
+          </topicLine>
+          <topicLine>
+            <line>256</line>
+            <inProject>true</inProject>
+            <url>file:///Users/jiangpeng/fusionProjects/dataservice/src/main/java/com/fusionskye/mgtrace/ts/gateway/repository/postgres/custom/TraceCustomRepository.java</url>
+            <note>补0操作，只补0到from有值为止</note>
+            <bookmarkUid>3a780801-974d-4f03-811b-ed5bb285e3b6</bookmarkUid>
+            <relativePath>src/main/java/com/fusionskye/mgtrace/ts/gateway/repository/postgres/custom/TraceCustomRepository.java</relativePath>
+          </topicLine>
+          <topicLine>
+            <line>650</line>
+            <inProject>true</inProject>
+            <url>file:///Users/jiangpeng/fusionProjects/dataservice/src/main/java/com/fusionskye/mgtrace/ts/gateway/repository/postgres/custom/TraceCustomRepository.java</url>
+            <note>补0操作，只补0到from有值为止</note>
+            <bookmarkUid>7fba34fc-d396-4bfb-9766-57270beffa58</bookmarkUid>
+            <relativePath>src/main/java/com/fusionskye/mgtrace/ts/gateway/repository/postgres/custom/TraceCustomRepository.java</relativePath>
+          </topicLine>
+        </topicLines>
+      </group>
+      <group>
+        <name>TimeUtil</name>
+        <note />
+        <expanded>false</expanded>
+        <createdAt>2025-11-05 10:59:47</createdAt>
+        <updatedAt>2025-11-05 10:59:47</updatedAt>
+        <topicLines>
+          <topicLine>
+            <line>53</line>
+            <inProject>true</inProject>
+            <url>file:///Users/jiangpeng/fusionProjects/dataservice/src/main/java/com/fusionskye/mgtrace/ts/common/util/TimeUtil.java</url>
+            <note>获取两个时间戳之间每分钟的整秒时间戳</note>
+            <bookmarkUid>f9bd3a98-9764-4d4e-880c-1d20c5a79d53</bookmarkUid>
+            <relativePath>src/main/java/com/fusionskye/mgtrace/ts/common/util/TimeUtil.java</relativePath>
+          </topicLine>
+        </topicLines>
+      </group>
+      <group>
+        <name>MathUtil</name>
+        <note />
+        <expanded>false</expanded>
+        <createdAt>2025-11-05 11:00:49</createdAt>
+        <updatedAt>2025-11-05 11:01:38</updatedAt>
+        <topicLines>
+          <topicLine>
+            <line>32</line>
+            <inProject>true</inProject>
+            <url>file:///Users/jiangpeng/fusionProjects/dataservice/src/main/java/com/fusionskye/mgtrace/ts/common/util/MathUtil.java</url>
+            <note>将所有数据转换为中位数, 尽量找到某个数的前5个数和后5个数组成一个&lt;=11个数的数组，计算得到该数组的中位数。</note>
+            <bookmarkUid>bba67f06-b0c8-4331-8c9c-c7403505b16c</bookmarkUid>
+            <relativePath>src/main/java/com/fusionskye/mgtrace/ts/common/util/MathUtil.java</relativePath>
+          </topicLine>
+          <topicLine>
+            <line>21</line>
+            <inProject>true</inProject>
+            <url>file:///Users/jiangpeng/fusionProjects/dataservice/src/main/java/com/fusionskye/mgtrace/ts/common/util/MathUtil.java</url>
+            <note>尽量找到前5个数</note>
+            <bookmarkUid>a56d0c8a-075a-48ab-ba84-e0f08f59c07c</bookmarkUid>
+            <relativePath>src/main/java/com/fusionskye/mgtrace/ts/common/util/MathUtil.java</relativePath>
+          </topicLine>
+          <topicLine>
+            <line>22</line>
+            <inProject>true</inProject>
+            <url>file:///Users/jiangpeng/fusionProjects/dataservice/src/main/java/com/fusionskye/mgtrace/ts/common/util/MathUtil.java</url>
+            <note>尽量找到后5个数</note>
+            <bookmarkUid>5e1036bd-6b53-4e64-8724-7daea109f859</bookmarkUid>
+            <relativePath>src/main/java/com/fusionskye/mgtrace/ts/common/util/MathUtil.java</relativePath>
+          </topicLine>
+          <topicLine>
+            <line>41</line>
+            <inProject>true</inProject>
+            <url>file:///Users/jiangpeng/fusionProjects/dataservice/src/main/java/com/fusionskye/mgtrace/ts/common/util/MathUtil.java</url>
+            <note>计算中位数</note>
+            <bookmarkUid>9aeb8fcf-d4c3-40ca-91e6-93f95a1ae98b</bookmarkUid>
+            <relativePath>src/main/java/com/fusionskye/mgtrace/ts/common/util/MathUtil.java</relativePath>
+          </topicLine>
+          <topicLine>
+            <line>40</line>
+            <inProject>true</inProject>
+            <url>file:///Users/jiangpeng/fusionProjects/dataservice/src/main/java/com/fusionskye/mgtrace/ts/common/util/MathUtil.java</url>
+            <note>获取中位数 如果数组长度是奇数，则取中间数; 如果数组长度是偶数，则取中间两个数的平均值</note>
+            <bookmarkUid>44782886-5ef2-43be-b7f6-609dbfe5e61c</bookmarkUid>
+            <relativePath>src/main/java/com/fusionskye/mgtrace/ts/common/util/MathUtil.java</relativePath>
           </topicLine>
         </topicLines>
       </group>
