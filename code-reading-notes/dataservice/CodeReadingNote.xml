@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<topics>
+  <topic>
+    <name>mgone-ts</name>
+    <note />
+    <updatedAt>2025-11-05 10:31:33</updatedAt>
+    <hasGroups>true</hasGroups>
+    <groups>
+      <group>
+        <name>TraceSummaryService</name>
+        <note />
+        <expanded>true</expanded>
+        <createdAt>2025-11-05 10:29:05</createdAt>
+        <updatedAt>2025-11-05 10:31:33</updatedAt>
+        <topicLines>
+          <topicLine>
+            <line>385</line>
+            <inProject>true</inProject>
+            <url>file:///Users/jiangpeng/fusionProjects/dataservice/src/main/java/com/fusionskye/mgtrace/ts/gateway/service/TraceSummaryService.java</url>
+            <note>查找trace的同时补零</note>
+            <bookmarkUid>fba8c3db-a1b1-4c05-95ad-eacc8c2c414a</bookmarkUid>
+            <relativePath>src/main/java/com/fusionskye/mgtrace/ts/gateway/service/TraceSummaryService.java</relativePath>
+          </topicLine>
+          <topicLine>
+            <line>398</line>
+            <inProject>true</inProject>
+            <url>file:///Users/jiangpeng/fusionProjects/dataservice/src/main/java/com/fusionskye/mgtrace/ts/gateway/service/TraceSummaryService.java</url>
+            <note>一分钟一个点, 不需要额外补0, sql已经补零了</note>
+            <bookmarkUid>d2f3ee4c-c7e3-47a7-9a6e-50471dd6990c</bookmarkUid>
+            <relativePath>src/main/java/com/fusionskye/mgtrace/ts/gateway/service/TraceSummaryService.java</relativePath>
+          </topicLine>
+          <topicLine>
+            <line>401</line>
+            <inProject>true</inProject>
+            <url>file:///Users/jiangpeng/fusionProjects/dataservice/src/main/java/com/fusionskye/mgtrace/ts/gateway/service/TraceSummaryService.java</url>
+            <note>15秒一个点, 不需要额外补0, sql已经补零了</note>
+            <bookmarkUid>342cfcb7-a660-432e-84f2-cd24940cc011</bookmarkUid>
+            <relativePath>src/main/java/com/fusionskye/mgtrace/ts/gateway/service/TraceSummaryService.java</relativePath>
+          </topicLine>
+          <topicLine>
+            <line>139</line>
+            <inProject>true</inProject>
+            <url>file:///Users/jiangpeng/fusionProjects/dataservice/src/main/java/com/fusionskye/mgtrace/ts/gateway/service/TraceSummaryService.java</url>
+            <note>去掉前面多余的值</note>
+            <bookmarkUid>3b729318-a202-4519-984c-c9510bd36b4a</bookmarkUid>
+            <relativePath>src/main/java/com/fusionskye/mgtrace/ts/gateway/service/TraceSummaryService.java</relativePath>
+          </topicLine>
+          <topicLine>
+            <line>77</line>
+            <inProject>true</inProject>
+            <url>file:///Users/jiangpeng/fusionProjects/dataservice/src/main/java/com/fusionskye/mgtrace/ts/gateway/service/TraceSummaryService.java</url>
+            <note>summaryType != null, 统计方式为往前查询，给web后端使用</note>
+            <bookmarkUid>e6e67d9a-c0ea-4892-9d0c-1facc26f053d</bookmarkUid>
+            <relativePath>src/main/java/com/fusionskye/mgtrace/ts/gateway/service/TraceSummaryService.java</relativePath>
+          </topicLine>
+          <topicLine>
+            <line>48</line>
+            <inProject>true</inProject>
+            <url>file:///Users/jiangpeng/fusionProjects/dataservice/src/main/java/com/fusionskye/mgtrace/ts/gateway/service/TraceSummaryService.java</url>
+            <note>&lt;ciid-interval, starkRequestId&gt;</note>
+            <bookmarkUid>b4d16db4-5452-4577-b507-bacbe623965c</bookmarkUid>
+            <relativePath>src/main/java/com/fusionskye/mgtrace/ts/gateway/service/TraceSummaryService.java</relativePath>
+          </topicLine>
+          <topicLine>
+            <line>65</line>
+            <inProject>true</inProject>
+            <url>file:///Users/jiangpeng/fusionProjects/dataservice/src/main/java/com/fusionskye/mgtrace/ts/gateway/service/TraceSummaryService.java</url>
+            <note>返回结果需要进行聚合统计</note>
+            <bookmarkUid>4c75b10e-70a9-4126-b5cc-334596159b21</bookmarkUid>
+            <relativePath>src/main/java/com/fusionskye/mgtrace/ts/gateway/service/TraceSummaryService.java</relativePath>
+          </topicLine>
+          <topicLine>
+            <line>79</line>
+            <inProject>true</inProject>
+            <url>file:///Users/jiangpeng/fusionProjects/dataservice/src/main/java/com/fusionskye/mgtrace/ts/gateway/service/TraceSummaryService.java</url>
+            <note>时间窗口往前统计</note>
+            <bookmarkUid>a4c29f27-a134-4b62-9e6b-6d45a24485eb</bookmarkUid>
+            <relativePath>src/main/java/com/fusionskye/mgtrace/ts/gateway/service/TraceSummaryService.java</relativePath>
+          </topicLine>
+        </topicLines>
+      </group>
+    </groups>
+  </topic>
+</topics>
+
