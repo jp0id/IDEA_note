@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<topics>
+  <topic>
+    <name>历史数据查询</name>
+    <note>getHistoryData
+getMultiplePeriodData
+getCountAndAvgMetricInTimes
+getProceedingAlarm
+getPeriodAlert
+getAlarmsByFromTime
+getAllIndexes
+getAlarmList
+getSummaryData
+setRateTypesValueFields
+getProbeNameSetForStream
+getProbeNameSetForFilter
+getEventsByEventIdsFromEs
+getDimensionValuesByDimensionKeys
+getHistoryDatasByDimension
+getTimeDatasBySpecificDimensions
+getHistoryDataForRealtime</note>
+    <updatedAt>2025-11-05 10:16:12</updatedAt>
+    <hasGroups>false</hasGroups>
+    <topicLines />
+  </topic>
+</topics>
+
