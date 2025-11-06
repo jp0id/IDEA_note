@@ -3,7 +3,7 @@
   <topic>
     <name>mgone-ts</name>
     <note>使用sql语句进行补零操作</note>
-    <updatedAt>2025-11-05 11:01:38</updatedAt>
+    <updatedAt>2025-11-06 10:13:54</updatedAt>
     <hasGroups>true</hasGroups>
     <groups>
       <group>
@@ -11,10 +11,10 @@
         <note />
         <expanded>true</expanded>
         <createdAt>2025-11-05 10:29:05</createdAt>
-        <updatedAt>2025-11-05 10:39:12</updatedAt>
+        <updatedAt>2025-11-06 10:13:54</updatedAt>
         <topicLines>
           <topicLine>
-            <line>385</line>
+            <line>387</line>
             <inProject>true</inProject>
             <url>file:///Users/jiangpeng/fusionProjects/dataservice/src/main/java/com/fusionskye/mgtrace/ts/gateway/service/TraceSummaryService.java</url>
             <note>查找trace的同时补零</note>
@@ -22,7 +22,7 @@
             <relativePath>src/main/java/com/fusionskye/mgtrace/ts/gateway/service/TraceSummaryService.java</relativePath>
           </topicLine>
           <topicLine>
-            <line>398</line>
+            <line>400</line>
             <inProject>true</inProject>
             <url>file:///Users/jiangpeng/fusionProjects/dataservice/src/main/java/com/fusionskye/mgtrace/ts/gateway/service/TraceSummaryService.java</url>
             <note>一分钟一个点, 不需要额外补0, sql已经补零了</note>
@@ -30,7 +30,7 @@
             <relativePath>src/main/java/com/fusionskye/mgtrace/ts/gateway/service/TraceSummaryService.java</relativePath>
           </topicLine>
           <topicLine>
-            <line>401</line>
+            <line>403</line>
             <inProject>true</inProject>
             <url>file:///Users/jiangpeng/fusionProjects/dataservice/src/main/java/com/fusionskye/mgtrace/ts/gateway/service/TraceSummaryService.java</url>
             <note>15秒一个点, 不需要额外补0, sql已经补零了</note>
@@ -38,7 +38,7 @@
             <relativePath>src/main/java/com/fusionskye/mgtrace/ts/gateway/service/TraceSummaryService.java</relativePath>
           </topicLine>
           <topicLine>
-            <line>139</line>
+            <line>141</line>
             <inProject>true</inProject>
             <url>file:///Users/jiangpeng/fusionProjects/dataservice/src/main/java/com/fusionskye/mgtrace/ts/gateway/service/TraceSummaryService.java</url>
             <note>去掉前面多余的值</note>
@@ -77,6 +77,15 @@
             <bookmarkUid>a4c29f27-a134-4b62-9e6b-6d45a24485eb</bookmarkUid>
             <relativePath>src/main/java/com/fusionskye/mgtrace/ts/gateway/service/TraceSummaryService.java</relativePath>
           </topicLine>
+          <topicLine>
+            <line>590</line>
+            <inProject>true</inProject>
+            <url>file:///Users/jiangpeng/fusionProjects/dataservice/src/main/java/com/fusionskye/mgtrace/ts/gateway/service/TraceSummaryService.java</url>
+            <note>不需要补零。
+如果交易量为0，说明该时间点不存在交易量，把这个时间段的数据去除。</note>
+            <bookmarkUid>f0c04516-cf62-46dc-af84-2a0df2354539</bookmarkUid>
+            <relativePath>src/main/java/com/fusionskye/mgtrace/ts/gateway/service/TraceSummaryService.java</relativePath>
+          </topicLine>
         </topicLines>
       </group>
       <group>
@@ -84,7 +93,7 @@
         <note />
         <expanded>true</expanded>
         <createdAt>2025-11-05 10:38:45</createdAt>
-        <updatedAt>2025-11-05 10:39:22</updatedAt>
+        <updatedAt>2025-11-06 10:13:54</updatedAt>
         <topicLines>
           <topicLine>
             <line>76</line>
@@ -99,9 +108,9 @@
       <group>
         <name>QueryService</name>
         <note />
-        <expanded>false</expanded>
+        <expanded>true</expanded>
         <createdAt>2025-11-05 10:40:48</createdAt>
-        <updatedAt>2025-11-05 10:40:48</updatedAt>
+        <updatedAt>2025-11-06 10:13:54</updatedAt>
         <topicLines>
           <topicLine>
             <line>145</line>
@@ -118,7 +127,7 @@
         <note />
         <expanded>false</expanded>
         <createdAt>2025-11-05 10:42:58</createdAt>
-        <updatedAt>2025-11-05 10:43:28</updatedAt>
+        <updatedAt>2025-11-06 10:13:54</updatedAt>
         <topicLines>
           <topicLine>
             <line>34</line>
@@ -151,7 +160,7 @@
         <note />
         <expanded>true</expanded>
         <createdAt>2025-11-05 10:44:19</createdAt>
-        <updatedAt>2025-11-05 10:44:19</updatedAt>
+        <updatedAt>2025-11-06 10:13:54</updatedAt>
         <topicLines>
           <topicLine>
             <line>18</line>
@@ -166,9 +175,9 @@
       <group>
         <name>BoundedPriorityConcurrentMap</name>
         <note />
-        <expanded>false</expanded>
+        <expanded>true</expanded>
         <createdAt>2025-11-05 10:46:27</createdAt>
-        <updatedAt>2025-11-05 10:46:27</updatedAt>
+        <updatedAt>2025-11-06 10:13:54</updatedAt>
         <topicLines>
           <topicLine>
             <line>15</line>
@@ -183,9 +192,9 @@
       <group>
         <name>MetricSummaryItem</name>
         <note />
-        <expanded>false</expanded>
+        <expanded>true</expanded>
         <createdAt>2025-11-05 10:47:25</createdAt>
-        <updatedAt>2025-11-05 10:48:22</updatedAt>
+        <updatedAt>2025-11-06 10:13:54</updatedAt>
         <topicLines>
           <topicLine>
             <line>57</line>
@@ -232,9 +241,9 @@
       <group>
         <name>BucketContainer</name>
         <note />
-        <expanded>false</expanded>
+        <expanded>true</expanded>
         <createdAt>2025-11-05 10:48:56</createdAt>
-        <updatedAt>2025-11-05 10:49:41</updatedAt>
+        <updatedAt>2025-11-06 10:13:54</updatedAt>
         <topicLines>
           <topicLine>
             <line>208</line>
@@ -281,9 +290,9 @@
       <group>
         <name>AggregationService</name>
         <note />
-        <expanded>false</expanded>
+        <expanded>true</expanded>
         <createdAt>2025-11-05 10:50:19</createdAt>
-        <updatedAt>2025-11-05 10:50:44</updatedAt>
+        <updatedAt>2025-11-06 10:13:54</updatedAt>
         <topicLines>
           <topicLine>
             <line>84</line>
@@ -314,9 +323,9 @@
       <group>
         <name>MetricModelService</name>
         <note />
-        <expanded>false</expanded>
+        <expanded>true</expanded>
         <createdAt>2025-11-05 10:51:21</createdAt>
-        <updatedAt>2025-11-05 10:53:41</updatedAt>
+        <updatedAt>2025-11-06 10:13:54</updatedAt>
         <topicLines>
           <topicLine>
             <line>50</line>
@@ -403,9 +412,9 @@
       <group>
         <name>MGTMetricsSummaryService</name>
         <note />
-        <expanded>false</expanded>
+        <expanded>true</expanded>
         <createdAt>2025-11-05 10:54:26</createdAt>
-        <updatedAt>2025-11-05 10:55:01</updatedAt>
+        <updatedAt>2025-11-06 10:13:54</updatedAt>
         <topicLines>
           <topicLine>
             <line>275</line>
@@ -436,9 +445,9 @@
       <group>
         <name>MGTMetricsToDBService</name>
         <note />
-        <expanded>false</expanded>
+        <expanded>true</expanded>
         <createdAt>2025-11-05 10:55:38</createdAt>
-        <updatedAt>2025-11-05 10:55:38</updatedAt>
+        <updatedAt>2025-11-06 10:13:54</updatedAt>
         <topicLines>
           <topicLine>
             <line>366</line>
@@ -453,9 +462,9 @@
       <group>
         <name>HistogramCustomRepository</name>
         <note />
-        <expanded>false</expanded>
+        <expanded>true</expanded>
         <createdAt>2025-11-05 10:56:42</createdAt>
-        <updatedAt>2025-11-05 10:56:42</updatedAt>
+        <updatedAt>2025-11-06 10:13:54</updatedAt>
         <topicLines>
           <topicLine>
             <line>98</line>
@@ -470,9 +479,9 @@
       <group>
         <name>MetricCustomRepository</name>
         <note />
-        <expanded>false</expanded>
+        <expanded>true</expanded>
         <createdAt>2025-11-05 10:57:26</createdAt>
-        <updatedAt>2025-11-05 10:57:26</updatedAt>
+        <updatedAt>2025-11-06 10:13:54</updatedAt>
         <topicLines>
           <topicLine>
             <line>17</line>
@@ -487,9 +496,9 @@
       <group>
         <name>TraceCustomRepository</name>
         <note />
-        <expanded>false</expanded>
+        <expanded>true</expanded>
         <createdAt>2025-11-05 10:58:19</createdAt>
-        <updatedAt>2025-11-05 10:58:53</updatedAt>
+        <updatedAt>2025-11-06 10:13:54</updatedAt>
         <topicLines>
           <topicLine>
             <line>106</line>
@@ -500,7 +509,7 @@
             <relativePath>src/main/java/com/fusionskye/mgtrace/ts/gateway/repository/postgres/custom/TraceCustomRepository.java</relativePath>
           </topicLine>
           <topicLine>
-            <line>256</line>
+            <line>650</line>
             <inProject>true</inProject>
             <url>file:///Users/jiangpeng/fusionProjects/dataservice/src/main/java/com/fusionskye/mgtrace/ts/gateway/repository/postgres/custom/TraceCustomRepository.java</url>
             <note>补0操作，只补0到from有值为止</note>
@@ -520,9 +529,9 @@
       <group>
         <name>TimeUtil</name>
         <note />
-        <expanded>false</expanded>
+        <expanded>true</expanded>
         <createdAt>2025-11-05 10:59:47</createdAt>
-        <updatedAt>2025-11-05 10:59:47</updatedAt>
+        <updatedAt>2025-11-06 10:13:54</updatedAt>
         <topicLines>
           <topicLine>
             <line>53</line>
@@ -537,9 +546,9 @@
       <group>
         <name>MathUtil</name>
         <note />
-        <expanded>false</expanded>
+        <expanded>true</expanded>
         <createdAt>2025-11-05 11:00:49</createdAt>
-        <updatedAt>2025-11-05 11:01:38</updatedAt>
+        <updatedAt>2025-11-06 10:13:54</updatedAt>
         <topicLines>
           <topicLine>
             <line>32</line>
